@@ -1,38 +1,63 @@
-.App {
+.app {
   text-align: center;
+  margin-top: 50px;
+  background-image: url("https://t4.ftcdn.net/jpg/05/13/94/15/360_F_513941555_4yQkIo98DKiei2ZjUK5EUTUjaaJDw3l6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.traffic-light {
+  width: 80px;
+  background: #333;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.circle {
+  width: 50px;
+  height: 50px;
+  margin: 10px auto;
+  border-radius: 50%;
+  background-color: #555;
+  opacity: 0.3;
+  transition: opacity 0.5s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.on {
+  opacity: 1;
+}
+
+.buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #eee;
+  transition: background-color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  background-color: #ddd;
 }
